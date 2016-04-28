@@ -22,7 +22,6 @@
 <center>
 
 <?php
-
 define(PRINT_FORMAT, "homepage");
 
 // Trim leading slash(es)
