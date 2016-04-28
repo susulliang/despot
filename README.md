@@ -1,7 +1,7 @@
 # Despot
 A minimalistic blogging platform
 
-
+To see the demo of this blog, go to http://despot.desliang.com
 
 **DeSpot is currently under heavy development.**
 
