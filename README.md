@@ -5,6 +5,8 @@ A minimalistic blogging platform
 
 **DeSpot is currently under heavy development.**
 
+To install, copy everything over to a installation folder and then run ds_install.php
+
 Current supported features:
 
 - Full post, view and edit capability
