@@ -29,40 +29,12 @@ define(PRINT_FORMAT, "homepage");
 $path = ltrim($_SERVER['REQUEST_URI'], '/'); 
 if(!$path) $path = "index";
 
-// Redirections
-switch ($path) {
-	case substr($path, 0, 9)=="index.php" || $path=="index":
-		// Display home page
-		$printFormat = "homepage";
-		require('ds_header.php');
-		$_SESSION["redirect"] = NULL;
-		include('ds_posts.php');
-		include('ds_footer.php');
-		break;	
-
-	case "login":
-		header("location:ds_login.php");
-		break;
-
-	case "register":
-		header("location:ds_register.php");
-		break;
-
-	case "about":
-		header("location:ds_about.php");
-		break;
-
-	default:
-		//404 Redirect
-		require_once("ds_core.php");
-		showError("Sorry, $path is not found!","index.php");
-		break;
-}
-
-
-
-
-
+// Display home page
+$printFormat = "homepage";
+require('ds_header.php');
+$_SESSION["redirect"] = NULL;
+include('ds_posts.php');
+include('ds_footer.php');
 ?>
 
 </center>
